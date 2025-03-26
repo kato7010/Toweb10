@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/*☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
+        共通
+☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 2px red solid; 不具合を探すための設定*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/*フォントサイズやカラーなどの共通設定を定義*/
+:root {
+  --BackgroundColor: #fffde2;
+  --border: #ccc;
+}
+
+h1 {
+  line-height: 1.3em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3em;
+  font-family: "Sofia", cursive;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
+  line-break: strict;
+  margin-top: 1rem;
+}
+
+span {
+  font-size: 1rem;
+}
+
+.title{
+  font-family: "Sofia", cursive;
+  font-size: 2rem;
+}
+
+/*=== 横幅設定 ===*/
+.message__inner {
+  padding: 2rem 4%;
+}
+
+@media (min-width: 768px) {
+  .message__inner {
+    padding: 2rem 8%;
+  }
+} /* min-width;768px end */
+
+/*☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
+        ヘッダー
+☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆*/
+.header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.header__inner {
+  display: flex;
+  justify-content: center;
+}
+
+/*☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
+        コンテンツ
+☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆*/
+.message {
+  background-color: var(--BackgroundColor);
+}
+.message__inner {
+}
+.message__container {
+}
+.class__container {
+}
+.class {
+  margin-top: 3rem;
+  padding: 1.5rem 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.see-you-later {
+  margin: 4rem 0 2rem;
+  text-align: center;
+}
+/*☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
+        フッター
+☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆*/
+.footer {
+  padding: 1rem;
+  border-top: 1px solid var(--border);
+}
+.footer__inner {
+  display: flex;
+  justify-content: center;
+}
