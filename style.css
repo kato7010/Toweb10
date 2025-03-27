@@ -42,11 +42,13 @@ p {
 
 span {
   font-size: 1rem;
+  display: block;
 }
 
 .title{
   font-family: "Sofia", cursive;
   font-size: 2rem;
+  text-align: center;
 }
 
 /*=== 横幅設定 ===*/
@@ -77,12 +79,6 @@ span {
 ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆*/
 .message {
   background-color: var(--BackgroundColor);
-}
-.message__inner {
-}
-.message__container {
-}
-.class__container {
 }
 .class {
   margin-top: 3rem;
